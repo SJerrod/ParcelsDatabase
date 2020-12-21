@@ -41,7 +41,7 @@ namespace Parcels.Models
         MySqlConnection conn = DB.Connection();
         conn.Open();
         MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
-        cmd.CommandText = @"SELECT * FROM packages;";
+        cmd.CommandText = @"SELECT * FROM package;";
         MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
         while (rdr.Read())
         {

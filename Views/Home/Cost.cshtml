@@ -1,0 +1,15 @@
+@using Parcels.Models;
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shipping Cost</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    </head>
+    <body>
+        <div class="container">
+          <h1>Heres the cost</h1>
+          <p>The volume of your package is: @Model.Volume</p>
+          <p>Your total cost is: @Model.Cost</p>
+        </div>
+    </body>
+</html>

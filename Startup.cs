@@ -38,7 +38,11 @@ namespace Parcels
         {
           await context.Response.WriteAsync("Something went wrong!");
         });
-
     }
   }
+  public static class DBConfiguration
+  {
+    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=parcels;";
+  }
+
 }
